@@ -12,28 +12,32 @@ Python3 должен быть уже установлен.
 pip install -r requirements.txt
 ```
 
+### Как настроить
+
+В файле ```.env``` должны быть перемнный TOKEN и MAINLINK
+
+```
+TOKEN = '...'
+MAINLINK = 'https://api-ssl.bitly.com/v4/bitlinks/'
+```
+
 ### Как использовать
 
 Пример если отправить не битлинк
-
 ```
 python main.py https://google.com
 ```
-
 Программа создат ссылку на битлинк
-
 ```
 Битлинк: https://bit.ly/3N3hWZw
 ```
 
-Если отправить битлинк
 
+Если отправить битлинк
 ```
 python main.py https://bit.ly/3N3hWZw
 ```
-
 Программа вернет количество кликов по битлинку
-
 ```
 Клики: 3
 ```
